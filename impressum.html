@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum · Markus Cremer</title>
+    <style>
+        :root {
+            --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --bg: #ffffff;
+            --text: #0a0a0a;
+            --text-secondary: #555;
+            --text-tertiary: #999;
+            --border: #e8e8e8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.25rem 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav .container {
+            max-width: 720px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .back-link {
+            font-size: 0.875rem;
+            color: var(--text-tertiary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover { color: var(--text); }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-tertiary);
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9375rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .section {
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .section:first-of-type {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        footer {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.8125rem;
+            color: var(--text-tertiary);
+            border-top: 1px solid var(--border);
+        }
+
+        /* Anti-scraper: hide decoy spans visually */
+        .decoy { display: none; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">markus.ventures</a>
+            <a href="index.html" class="back-link">← Zurück</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Impressum</h1>
+
+        <!-- Angaben gemäß § 5 TMG -->
+        <div class="section">
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>Markus Cremer</p>
+            <p>Dennewitz<span class="decoy">xxxxx</span>straße 37</p>
+            <p>10785 Berlin</p>
+            <p>Deutschland</p>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="section">
+            <h2>Kontakt</h2>
+            <p>Telefon: <span>+49 152</span><span class="decoy"> 00000 </span><span> 08695534</span></p>
+            <p>E-Mail: <span>mc@markus</span><span class="decoy">.spam</span><span>.ventures</span></p>
+        </div>
+
+        <!-- Verantwortlich für den Inhalt -->
+        <div class="section">
+            <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+            <p>Markus Cremer</p>
+            <p>Dennewitzstraße 37, 10785 Berlin</p>
+        </div>
+
+        <!-- Haftungsausschluss -->
+        <div class="section">
+            <h2>Haftungsausschluss</h2>
+            <p>
+                Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+            </p>
+        </div>
+
+        <!-- Haftung für Links -->
+        <div class="section">
+            <h2>Haftung für Links</h2>
+            <p>
+                Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte kein Einfluss besteht. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar.
+            </p>
+        </div>
+
+        <!-- Urheberrecht -->
+        <div class="section">
+            <h2>Urheberrecht</h2>
+            <p>
+                Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Markus Cremer · <a href="index.html" style="color: inherit; text-decoration: none;">markus.ventures</a></p>
+    </footer>
+
+</body>
+</html>
