@@ -614,13 +614,9 @@
         }
 
         .podcast-feature {
-            display: grid;
-            grid-template-columns: 1fr 360px;
-            gap: 2.5rem;
-            align-items: center;
-            margin-top: 2.5rem;
-            padding-top: 2.5rem;
-            border-top: 1px solid var(--border);
+            margin-bottom: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
         }
 
         .podcast-feature-label {
@@ -632,7 +628,7 @@
             margin-bottom: 0.5rem;
         }
 
-        .podcast-feature-text h4 {
+        .podcast-feature h4 {
             font-size: 1.15rem;
             font-weight: 600;
             line-height: 1.3;
@@ -643,10 +639,27 @@
             color: var(--text-muted, #666);
             font-size: 0.92rem;
             line-height: 1.55;
+            max-width: 620px;
+        }
+
+        .podcast-embeds {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .podcast-embed-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--text-muted, #888);
+            margin-bottom: 0.5rem;
         }
 
         @media (max-width: 700px) {
-            .podcast-feature {
+            .podcast-embeds {
                 grid-template-columns: 1fr;
                 gap: 1.25rem;
             }
@@ -1452,6 +1465,24 @@
                 <p class="section-number">02</p>
                 <h2 class="section-title">Speaking</h2>
                 <p class="section-desc">I speak about entrepreneurship, scaling startups, the creator economy, and music tech at conferences and podcasts.</p>
+
+            <div class="podcast-feature fade-in">
+                <p class="podcast-feature-label">Podcast Feature</p>
+                <h4>Unicorn Bakery: "Platz 1 im App Store &uuml;ber Nacht"</h4>
+                <p class="podcast-feature-desc">Guest on Fabian Tausch's Unicorn Bakery podcast, talking about how WePush hit #1 on the App Store overnight &mdash; 30,000 downloads in one night, a server crash, and the journey from SongPush to WePush.</p>
+                <div class="podcast-embeds">
+                    <div class="podcast-embed-col">
+                        <p class="podcast-embed-label">Spotify</p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6bENjv0VvEaOfghepQcRaW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="podcast-embed-col">
+                        <p class="podcast-embed-label">YouTube</p>
+                        <iframe style="border-radius:12px" width="100%" height="352" src="https://www.youtube.com/embed/gHBU8ysX9Oc" title="Unicorn Bakery Episode" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            
             </div>
 
             <div class="speaking-gallery">
@@ -1514,17 +1545,7 @@
                         <p style="margin-top: 0.75rem; color: var(--text-muted, #888); font-size: 0.85rem; text-align: center;">... and many more!</p>
                     </div>
 
-                    <div class="podcast-feature fade-in">
-                        <div class="podcast-feature-text">
-                            <p class="podcast-feature-label">Podcast Feature</p>
-                            <h4>Unicorn Bakery: "Platz 1 im App Store &uuml;ber Nacht"</h4>
-                            <p class="podcast-feature-desc">Guest on Fabian Tausch's Unicorn Bakery podcast, talking about how WePush hit #1 on the App Store overnight &mdash; 30,000 downloads in one night, a server crash, and the journey from SongPush to WePush.</p>
-                        </div>
-                        <div class="podcast-feature-embed">
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6bENjv0VvEaOfghepQcRaW?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        </div>
-                    </div>
-
+                    
         </div>
     </section>
 
