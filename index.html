@@ -658,6 +658,15 @@
             margin-bottom: 0.5rem;
         }
 
+        .event-media {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            display: block;
+            border-radius: 12px;
+            background: #111;
+        }
+
         @media (max-width: 700px) {
             .podcast-embeds {
                 grid-template-columns: 1fr;
@@ -1486,6 +1495,28 @@
                 </div>
                 <h4>Unicorn Bakery: "Platz 1 im App Store &uuml;ber Nacht"</h4>
                 <p class="podcast-feature-desc">Guest on Fabian Tausch's Unicorn Bakery podcast, talking about how WePush hit #1 on the App Store overnight &mdash; 30,000 downloads in one night, a server crash, and the journey from SongPush to WePush.</p>
+            </div>
+
+            <div class="podcast-feature fade-in">
+                <p class="podcast-feature-label">Own Event</p>
+                <div class="podcast-embeds">
+                    <div class="podcast-embed-col">
+                        <p class="podcast-embed-label">Aftermovie</p>
+                        <video class="event-media" src="https://the30berlin.com/assets/aftermovie.mp4" poster="images/the30-aftermovie.jpg" controls playsinline preload="none" aria-label="Aftermovie: The 30, 15 September 2026, Hotel Orania Berlin"></video>
+                    </div>
+                    <div class="podcast-embed-col">
+                        <p class="podcast-embed-label">Vol. 1</p>
+                        <a href="https://the30berlin.com" target="_blank"><img class="event-media" src="images/the30-dinner.jpg" alt="Guests at The 30 dinner in Berlin" loading="lazy"></a>
+                    </div>
+                </div>
+                <h4>The 30: Creator Marketing Leaders Berlin</h4>
+                <p class="podcast-feature-desc">I host The 30 together with WePush: an invite-only dinner that brings 30 of Germany's leading creator-marketing minds to one table. Vol. 1 took place on 15 September 2026 at Hotel Orania Berlin, with keynotes by Nica Gebauer and Max Schr&ouml;pfer and live music by FAST BOY. The next edition is already in the works.</p>
+                <div style="display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap;">
+                    <a href="https://the30berlin.com" target="_blank" style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.45rem 0.9rem; border: 1.5px solid var(--border); border-radius: 7px; font-size: 0.8rem; font-weight: 500; color: var(--text); text-decoration: none; transition: border-color 0.2s;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        → The 30
+                    </a>
+                </div>
             </div>
 
             
